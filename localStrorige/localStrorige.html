@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="/jquery/jquery.js"></script>
+	<script src="/localStrorige/localStrorige.js"></script>
+</head>
+
+<body>
+	<label for="tel">tel number :</label><br>
+	<input type="number" name="tel"><br><br>
+	<label for="nom">nom :</label><br>
+	<input type="text" name="nom">
+	<br><br>
+	<button id="set">Set</button>
+	<button id="get">Get</button>
+	<button id="removeAll">RemoveAll</button><br>
+
+
+
+	<script id="program">
+		//instate API
+		let localStorageApi = new LocalStorageApi();
+		//set
+		localStorageApi.set();
+		//get 
+
+		localStorageApi.get();
+		//removeAll
+		localStorageApi.removeAll();
+
+		console.log(localStorage);
+
+	</script>
+</body>
+
+</html>
